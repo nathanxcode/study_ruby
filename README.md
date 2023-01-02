@@ -7,4 +7,5 @@
  <li>I'm going to try to do this project completely in English, but I'm sorry if I mix up Portuguese a little🙏</li.
  </ul>
 
-<h4>I'm studying the ruby course of the odin project</h4> https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby
+<h4>I'm studying the ruby course of the odin project</h4>
+[The Odin Project: Ruby][https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby]
