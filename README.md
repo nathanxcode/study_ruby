@@ -8,4 +8,5 @@
  </ul>
 
 <h4>I'm studying the ruby course of the odin project</h4>
-[The Odin Project: Ruby][https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby]
+The Odin Project: Ruby: https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby
+  
