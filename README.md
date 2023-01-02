@@ -3,6 +3,6 @@
 <h3>The purpose of this project is to show the progress of my development in the <strong>ruby language</strong><h3>
 
  <ul>
- <li>1.I will try to study at least one topic every day.🦾</li>
- <li>2.I'm going to try to do this project completely in English, but I'm sorry if I mix up Portuguese a little🙏</li.
+ <li>I will try to study at least one topic every day.🦾</li>
+ <li>I'm going to try to do this project completely in English, but I'm sorry if I mix up Portuguese a little🙏</li.
  </ul>
