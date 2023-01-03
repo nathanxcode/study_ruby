@@ -93,9 +93,9 @@ number = 8;
     puts "Welcome to a life of debt." unless age < 18
 
     unless age < 18
-    puts "Down with that sort of thing."
+        puts "Down with that sort of thing."
     else
-    puts "Careful now!"
+        puts "Careful now!"
     end
 
 #Ternary operator
