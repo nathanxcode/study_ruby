@@ -16,4 +16,9 @@
 
     #default parameters can be passed too.
     #in this case: def welcome(name = "guy")...
-    
+
+    #Chaining Methods
+    phrase = ["be", "to", "not", "or", "be", "to"]
+
+    puts phrase.reverse.join(" ").capitalize
+    #=> "To be or not to be"
