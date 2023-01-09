@@ -4,25 +4,27 @@
 
 
 def caesarEncrypt(string, shift)
-    
-    alphabet = ('a'..'z').to_a
-    
-    new_array = (string.split(''))
-    new_string = " "
-    
-    new_array.each_with_index do |letter, index|
 
-        if(letter == alphabet[index])
-            alphabet.each_with_index do |a_letter, index|
-                #puts "#{index}: #{letter}"
-                n_index = index + shift
-                new_string += alphabet[n_index]
-            end
-            puts new_string
+    
+    result = ""
+    string.each_char do |char|
 
+        #lowercase = 97..122
+        #uppercase = 65..90
+        if char.between?('a', 'z')
+            char = char.ord + shift
+            #atual char position - final char(z), sum with the first char(a)
+            char = (char - 122) + 96 until char < 123
+            char = char.chr
+        elsif char.between?('A', 'Z')
+            char = char.ord + shift
+            #atual char position - final char(Z), sum with the first char(A)
+            char = (char - 90) + 64 until char < 91
+            char = char.chr
+        else char
         end
+        result += char
     end
-
-
+    return p result
 end
-caesarEncrypt("hello world", 5)
+caesarEncrypt("What a string!", 5)
