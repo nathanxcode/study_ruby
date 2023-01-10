@@ -1,33 +1,15 @@
-
-
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+
 def substrings(text, dictionary)
 
-    new_hash = Hash.new
-    delimiters = [',', ' ', "'"]
-    handled_t = text.split(Regexp.union(delimiters))
+    n_hash = Hash.new(0)
+    text.downcase!
+    text = text.split(/[\s,'\,""\,'!'\,'?']/)
     
-    handled_t.each_with_index do |word,index|
-        word.downcase!
-        if word.include?(dictionary[index])
-            handled_t << dictionary[index]
-        end
-
-        dictionary.each do |d_word|
-            unless new_hash.empty?    
-                if(word == d_word)
-                    new_hash[word] = 1
-                end
-            else
-                new_hash.each { |k, v| new_hash[k] = +1 }
-            end
-        end
-            
+    text.each do |word|
+        n_hash[word] += 1 if dictionary.include?(word)
     end
-
-    p new_hash
-
-
+    p n_hash
 end
 
 substrings("Howdy partner, sit down! How's it going?", dictionary)
