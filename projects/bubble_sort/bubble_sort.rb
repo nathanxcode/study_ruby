@@ -18,12 +18,10 @@ def bubble_sort(array)
                     array[i+1] = b_num
                 end
             end        
-            p "#{i}: #{array}"
         end
     end
-
-
-
+    p array
+    return array
 end
 
 #           [0,2,2,3,4,78]
